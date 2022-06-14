@@ -9,19 +9,125 @@ body{
 }
 /* header */
 
+.main-header{
+    height: auto;
+    background-color: white;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+
 .main-header img{
     vertical-align: middle;
 }
 
 .main-header span{
     font-size: 40px;
+    font-weight: bolder;
+    vertical-align: middle;
 }
-/* fine header */
 
-/* parte nav */
+nav{
+    color: #555555;
+    margin-bottom: 20px;
+}
 
 .container{
     padding: 10px 50px;
     margin: 2px 200px 0px 200px;
     background-color: white;
+}
+
+/* pulsanti */
+
+button.bttn:enabled{
+    width: auto;
+    font-size: 80%;
+    background: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px 10px;
+}
+
+button.bttn:disabled{
+    width: auto;
+    font-size: 80%;
+    background: lightslategray;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px 10px;
+    opacity: 0.5;
+}
+
+/* parte della lista */
+
+.lista{
+    padding: 10px 0px;
+    margin: 5px 0px 0px 0px;
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+    padding: 1%;
+}
+
+.lista h2:before{
+    content: '\25BE';
+}
+
+.lista-interna li{
+    padding: 10px;
+}
+
+
+.lista-interna span .to-do{
+    border-radius: 50%;
+    padding: 1px 5px;
+    margin-right: 10px;
+}
+
+span.done, span.to-do{
+    padding: 5px;
+}
+
+.not-done{
+    color: red;
+}
+
+.marker{
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-size: 70%;
+}
+
+.marker.editorial{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.marker.goals{
+    background-color: purple;
+    color: white;
+}
+
+.marker.recruit{
+    background-color: lightseagreen;
+    color: white;
+}
+
+.marker.mobile{
+    background-color: orange;
+    color: white;
+}
+
+marker.web{
+    background-color: rgb(177, 90, 133);
+    color: white;
+}
+
+.marker.sales{
+    background-color: limegreen;
+    color: white;
 }
